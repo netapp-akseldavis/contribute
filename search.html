@@ -54,11 +54,13 @@
 
   
 
+  <link rel='stylesheet' href='/contribute/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/contribute/css/prism-netapp.css' type='text/css'>
+
   <script src='/contribute/js/clouddocs.js'></script>
   <script src='/contribute/js/s_code_impl.js'></script>
   <script src='/contribute/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
   <script src='/contribute/js/toc.js'></script>
   <script src='/contribute/js/customscripts.js'></script>
 
@@ -235,7 +237,6 @@
                 <li class="n-menu__list-item n-menu__list-item--level-1">
                   <a href="/contribute/us-en/" class="n-menu__header-text">English</a>
                 </li>
-                
               </ul>
             </li>
           </ul>
@@ -307,7 +308,7 @@
           <div class="n-container">
             <div class="n-footer__bottom-left">
               <div class="n-footer__copyright">
-                  <a href="//www.netapp.com/us/legal/copyright.aspx" class="n-footer__copyright-link">© 2018 NetApp, Inc.</a>
+                  <a href="//www.netapp.com/us/legal/copyright.aspx" class="n-footer__copyright-link">© 2019 NetApp, Inc.</a>
               </div>
               <div class="n-footer__copyright">
                 <a href="https://library.netapp.com/ecm/ecm_download_file/ECMLP2848669" class="n-footer__copyright-link">Notice</a>
@@ -376,14 +377,31 @@
     <script type="text/javascript" src="/contribute/js/responsive.js"></script>
 
     <!-- Elasticsearch JS -->
-    
+    <script type="text/javascript" src='/contribute/js/bundle.js'></script>
+
+    <!-- Syntax Highlighting -->
+    <script type="text/javascript" src='/contribute/js/prism.js'></script>
+    <script type="text/javascript" src='/contribute/js/prism-curl.js'></script>
+
   </body>
 
   
   <script>
       if(hasParameter(window.location.search,'q')) {
-        var queryString = decodeURI(params.get('q'));
+        var queryString = decodeURI(getParameter(window.location.search, 'q'));
         document.getElementsByClassName("sk-search-box__text")[0].setAttribute("value", queryString);
+      }
+
+      function getParameter(searchString,param) {
+        var params = searchString.split('?&');
+        for(var i=0;i<params.length;i++) {
+          var paramIndex = params[i].indexOf(param+"=");
+          if(paramIndex != -1) {
+            return params[i].substring(paramIndex+param.length+1);
+          }
+        }
+
+        return "";
       }
 
       function hasParameter(searchString,param) {
