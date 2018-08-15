@@ -19,6 +19,12 @@
   border-color: #ccc;
 }
 
+time+span {
+  border-left: solid 1px #686868;
+  margin-left: 12px;
+  padding-left: 12px;
+}
+
 /* i18n */
 .n-globe__icon {
   top: 0px;
@@ -41,8 +47,9 @@
 /* Misc */
 @media (min-width: 48em) {
   .n-layout-flex__item:nth-child(7) {
-    margin: left: .83333%;
-    margin: right: .83333%;
+    margin-left: .83333%;
+    margin-right: .83333%;
+    margin-top: 0;
   }
 }
 
