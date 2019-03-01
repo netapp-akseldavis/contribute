@@ -1,24 +1,33 @@
 <!DOCTYPE html>
-<!--[if IE 9]>         <html class="ie9"> <![endif]-->
-<!--[if gt IE 9]><!--> <html>         <!--<![endif]-->
+<html lang="en">
   <head>
   <title>Contributing to NetApp technical content through GitHub | NetApp Cloud Docs</title>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta property="og:title" content="Contributing to NetApp technical content through GitHub | NetApp Cloud Docs" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/contribute/us-en/index.html" />
+	<meta property="og:description" content="" />
+  <meta property="og:image" content="https://docs.netapp.com/contribute/us-en/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="encoding" content="utf-8">
-  <meta http-equiv="nss-type" content="Product Documentation">
-  <meta http-equiv="nss-subtype" content="User Guide">
-
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/>
   
-
   <meta name="description" content="">
   <meta name="keywords" content=" ">
+  
 
   <!-- Icons -->
   <link rel="icon" href="/contribute/us-en/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed -->
+  
+  <link rel="alternate" type="application/rss+xml" title="NetApp Cloud Docs" href="/contribute/us-en/feed.xml">
+  
 
   <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
 
@@ -102,11 +111,6 @@
 
   </script>
   <script>
-      $(function () {
-          $('[data-toggle="tooltip"]').tooltip()
-      })
-  </script>
-  <script>
       $(document).ready(function() {
           $("#tg-sb-link").click(function() {
               $("#tg-sb-sidebar").toggle();
@@ -121,10 +125,6 @@
   <!-- Controls the i18n Browser Redirection -->
   <script>
     var siteLocales = [];
-    
-      siteLocales.push("zz");
-    
-      siteLocales.push("en");
     
       siteLocales.push("us-en");
     
@@ -203,7 +203,7 @@
               <title>netapp-mark</title>
               <use xlink:href="/contribute/us-en/common/svg/sprite.svg#netapp-mark"></use>
             </svg>
-            <svg viewBox="0 0 1008 181.537" class="n-property-bar__logo-svg" aria-labelledby="title">
+            <svg class="n-property-bar__logo-svg" aria-labelledby="title">
               <title>NetApp</title>
               <use xlink:href="/contribute/us-en/common/svg/sprite.svg#netapp-logo"></use>
             </svg>
@@ -212,7 +212,6 @@
         </a>
       </div>
 
-      <!-- NetApp Search Bar -->
       
       <div id="search-demo-container" class="n-property-bar__search">
         <div id="react-search"></div>
@@ -221,17 +220,17 @@
 
       <div id="ie-i18n-menu" class="n-property-bar__utils">
         <ul class="n-property-navigation-bar__utils-list">
-          <li class="n-property-navigation-bar__utils-list-item">
-            <a href="#" class="n-property-navigation-bar__utils-link n-property-navigation-bar__nav-link n-property-navigation-bar__language-selector-toggle" data-menu-id="n-property-navigation-bar__menu--language-selector">
-              <svg class="n-icon-globe n-globe__icon" aria-labelledby="title">
+          <li class="n-property-navigation-bar__utils-list-item ie-i18n-container">
+            <a href="#" class="n-property-navigation-bar__utils-link n-property-navigation-bar__nav-link n-property-navigation-bar__language-selector-toggle ie-i18n-link" data-menu-id="n-property-navigation-bar__menu--language-selector">
+              <span class="ie-i18n-lang">English</span>
+              <svg class="ie-i18n-icon-container" class="n-property-bar__logo-svg" aria-labelledby="title">
                 <title>globe</title>
-                <use xlink:href="/contribute/us-en/common/svg/sprite.svg#globe"></use>
+                <use xlink:href="/contribute/us-en/common/svg/sprite.svg#globe" class="n-icon-globe n-globe__icon"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
-      <!-- End NetApp Search Bar -->
     </div>
 
     <div class="n-property-bar__menus">
@@ -243,14 +242,20 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list">
+
+
+                
+                
                 <li class="n-menu__list-item n-menu__list-item--level-1">
                   <a href="/contribute/us-en/" class="n-menu__header-text">English</a>
                 </li>
+                
+                
               </ul>
             </li>
           </ul>
           <div class="menu__footer">
-            <p>Current Language: us-en
+            <p>Current Language: English
             </p>
           </div>
         </div>
@@ -434,9 +439,6 @@
             <div class="n-footer__bottom-left">
               <div class="n-footer__copyright">
                   <a href="//www.netapp.com/us/legal/copyright.aspx" class="n-footer__copyright-link">© 2019 NetApp, Inc.</a>
-              </div>
-              <div class="n-footer__copyright">
-                <a href="https://library.netapp.com/ecm/ecm_download_file/ECMLP2848669" class="n-footer__copyright-link">Notice</a>
               </div>
               <div class="n-footer__copyright">
                 <a href="//www.netapp.com/us/legal/index.aspx" class="n-footer__copyright-link">Legal</a>
