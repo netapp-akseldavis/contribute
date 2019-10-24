@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title>Contribute to NetApp technical content in GitHub | NetApp Cloud Docs</title>
+  <title>Style guide for NetApp docs | NetApp Cloud Docs</title>
   <meta charset="utf-8">
-  <meta property="og:title" content="Contribute to NetApp technical content in GitHub | NetApp Cloud Docs" />
+  <meta property="og:title" content="Style guide for NetApp docs | NetApp Cloud Docs" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/contribute/index.html" />
+	<meta property="og:url" content="https://docs.netapp.com/contribute/style.html" />
 	<meta property="og:description" content="" />
   <meta property="og:image" content="https://docs.netapp.com/contribute/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
@@ -292,11 +292,11 @@
   
 
   
-    <li class="active"><a href="index.html">Contribute content</a></li>
+    <li><a href="index.html">Contribute content</a></li>
   
 
   
-    <li><a href="style.html">Style for NetApp docs</a></li>
+    <li class="active"><a href="style.html">Style for NetApp docs</a></li>
   
 
   
@@ -318,11 +318,11 @@
           
 
 <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Contribute to NetApp technical content in GitHub
+  <h1 class="n-doc__component-detail-heading">Style guide for NetApp docs
     <span>
       
-        <a target="_blank" href="https://github.com/NetAppDocs/contribute/blob/master/index.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
-        <a target="_blank" href="https://github.com/NetAppDocs/contribute/issues/new?body=Page%3A%20[Contribute to NetApp technical content in GitHub](https://docs.netapp.com/us-en/contribute/index.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
+        <a target="_blank" href="https://github.com/NetAppDocs/contribute/blob/master/style.adoc" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit on GitHub</a>
+        <a target="_blank" href="https://github.com/NetAppDocs/contribute/issues/new?body=Page%3A%20[Style guide for NetApp docs](https://docs.netapp.com/us-en/contribute/style.html)" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Request doc changes</a>
       
     </span>
   </h1>
@@ -330,18 +330,10 @@
 
 <p class="page-details">
 
-<time datetime="2019-09-24 13:25:17 +0000">09/24/2019</time>
+<time datetime="2019-09-20 20:42:48 +0000">09/20/2019</time>
 
 
 <span>Contributors
-  
-  <a target="_blank" href="https://github.com/akseldavis">
-    <img  class="avatar avatar-small"
-          alt="akseldavis"
-          width="20" height="20"
-          src="https://avatars2.githubusercontent.com/u/33839009?v=4"
-          style="border-radius: 50%;"/>
-  </a>
   
   <a target="_blank" href="https://github.com/netapp-bcammett">
     <img  class="avatar avatar-small"
@@ -355,121 +347,200 @@
 
 </p>
 
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph lead">
-<p>The documentation for several of NetApp&#8217;s products and services are open source. This enables you to directly contribute to the content to make improvements, corrections, and suggestions. All you need is a GitHub account and a little initiative.</p>
+<p>Our style is informal: conversational and empathetic, but to the point. Follow these guidelines when writing content for NetApp docs.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="write-conversationally">Write conversationally</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Don’t be so formal. Be friendly and empathetic. Speak like you’re explaining something to a friend or colleague. Writing in a conversational tone helps you connect with your audience.</p>
 </div>
 <div class="paragraph">
-<p>You can edit a page directly or request us to make the changes. If you need help with our writing style and syntax, use these resources:</p>
+<div class="title">Example</div>
+<p><strong>Rather than this</strong>: “If you experience issues with Cloud Tiering, you can view the health status on the Cluster Dashboard to determine why the error occurred. The health reflects the status of the ONTAP system and the Service Connector.”</p>
+</div>
+<div class="paragraph">
+<p><strong>Do this</strong>: “Failures can happen. When they do, Cloud Tiering displays a "Failed" health status on the Cluster Dashboard. View the status to get information about the failure."</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="get-to-the-point-by-focusing-on-the-users-goal">Get to the point by focusing on the user’s goal</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Start with what’s important to the user. Figure out what the customer is trying to do and help them achieve that goal.</p>
+</div>
+<div class="paragraph">
+<div class="title">Example</div>
+<p><strong>Rather than this</strong>: “Cloud Sync can sync data from one NFS server to another NFS server using data-in-flight encryption. Encrypting the data can help if you have strict security policies for transferring data over networks.”</p>
+</div>
+<div class="paragraph">
+<p><strong>Do this</strong>: “If your business has strict security policies, sync data between NFS servers in different networks by using data-in-flight encryption.”</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="create-pages-that-focus-on-a-goal-or-a-specific-topic">Create pages that focus on a goal or a specific topic</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you&#8217;re describing how to complete a series of tasks, put it all on one page in a series of sections. Don’t break it up into several mini-pages—that requires too much clicking. This is true for conceptual and reference-based information, as well.</p>
+</div>
+<div class="paragraph">
+<p>At the same time, don’t create long, intimidating pages. Use your best judgement to decide when a page is too long.</p>
 </div>
 <div class="ulist">
+<div class="title">Examples</div>
 <ul>
 <li>
-<p><a href="asciidoc_syntax.html">Review syntax for the documentation source</a></p>
+<p><a href="https://docs.netapp.com/us-en/cloud_volumes/aws/task_activating_support_entitlement.html" target="_blank" rel="noopener">Example #1</a></p>
 </li>
 <li>
-<p><a href="style.html">Review the style and voice for NetApp docs</a></p>
+<p><a href="https://docs.netapp.com/us-en/occm/concept_ha.html" target="_blank" rel="noopener">Example #2</a></p>
 </li>
 </ul>
 </div>
-<div class="olist arabic">
-<div class="title">Steps</div>
-<ol class="arabic">
+</div>
+</div>
+<div class="sect1">
+<h2 id="use-simple-words">Use simple words</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Avoid big and confusing words. They can bewilder, confound, and obfuscate. Just keep it simple.</p>
+</div>
+<div class="paragraph">
+<div class="title">Example</div>
+<p><strong>Rather than this</strong>: “Dissociate the user from your NetApp Cloud Central account.”</p>
+</div>
+<div class="paragraph">
+<p><strong>Do this</strong>: “Remove the user from your NetApp Cloud Central account.”</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="use-less-words">Use less words</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Write short, simple sentences. They’re easier to read and enable scanning. It’s okay to use a longer sentence every now and then but follow it with a shorter one. Like this.</p>
+</div>
+<div class="paragraph">
+<div class="title">Example</div>
+<p><strong>Rather than this</strong>: “To replicate data between a Cloud Volumes ONTAP system in AWS and ONTAP systems in other networks, you must have a VPN connection between the AWS VPC and the other network—for example, an Azure VNet or your corporate network.”</p>
+</div>
+<div class="paragraph">
+<p><strong>Do this</strong>: “Data replication between networks requires a VPN connection. For example, between your AWS VPC and your corporate network. Or between AWS and Azure.”</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="use-visuals-as-much-as-possible">Use visuals as much as possible</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Most people are visual learners. Use videos, conceptual diagrams, and screenshots to improve learning. They also help to break up walls of text—too much “blah, blah, blah.”</p>
+</div>
+<div class="ulist">
+<div class="title">Examples</div>
+<ul>
 <li>
-<p>If you don&#8217;t already have a GitHub account, <a href="https://github.com/join" target="_blank" rel="noopener">create one from github.com</a>.</p>
+<p><a href="https://docs.netapp.com/us-en/occm/concept_accounts_and_permissions.html" target="_blank" rel="noopener">Example #1</a></p>
 </li>
 <li>
-<p>Log in to your GitHub account.</p>
+<p><a href="https://docs.netapp.com/us-en/occm/task_getting_started_azure.html" target="_blank" rel="noopener">Example #2</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="its-okay-to-use-contractions">It’s okay to use contractions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Yes. Really. Modern machine translation can handle contractions.</p>
+</div>
+<div class="paragraph">
+<div class="title">Examples</div>
+<p><strong>Rather than this</strong>: “You do not need to create the Blob container. Cloud Tiering does that for you.”</p>
+</div>
+<div class="paragraph">
+<p><strong>Do this</strong>: “You don&#8217;t need to create the Blob container. Cloud Tiering does that for you.</p>
+</div>
+<div class="paragraph">
+<p><strong>Rather than this</strong>: “The icon might be disabled. If it is, it is because the agent is offline, you do not have Owner privileges, or because you do not have a Premium license.”</p>
+</div>
+<div class="paragraph">
+<p><strong>Do this</strong>: “The icon might be disabled. If it is, it&#8217;s because the agent is offline, you don&#8217;t have Owner privileges, or because you don&#8217;t have a Premium license.”</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="avoid-passive-sentences">Avoid passive sentences</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is a standard rule for tech writing, and it’s especially important when you want to sound conversational.</p>
+</div>
+<div class="paragraph">
+<div class="title">Example</div>
+<p><strong>Rather than this</strong>: “The required permissions must be provided before you deploy your first cluster.”</p>
+</div>
+<div class="paragraph">
+<p><strong>Do this</strong>: “Provide the required permissions before you deploy your first cluster.”</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="create-scannable-content">Create scannable content</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Use headings, lists, and tables to enable scanning.</p>
+</div>
+<div class="ulist">
+<div class="title">Examples</div>
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/us-en/cloud_volumes/aws/task_activating_support_entitlement.html" target="_blank" rel="noopener">Example #1</a></p>
 </li>
 <li>
-<p>Using a browser, open the page that you want to contribute.</p>
-<div class="paragraph">
-<p>You can edit the page directly or request changes to the page.</p>
-</div>
+<p><a href="https://docs.netapp.com/us-en/cloud_volumes/aws/reference_selecting_service_level_and_quota.html" target="_blank" rel="noopener">Example #2</a></p>
 </li>
-<li>
-<p>To edit a page:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Click <strong>Edit on GitHub</strong> next to the page title.</p>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="organize-content-around-the-users-goal">Organize content around the user&#8217;s goal</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p><span class="image"><img src="./media/diagram_edit_on_github.png" alt="Edit on GitHub"></span></p>
+<p>Help users find the info they need when they need it. Get them in and out of the docs as quickly as possible, by organizing the content as follows:</p>
 </div>
-</li>
-<li>
-<p>Click the pencil icon and start editing the content.</p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">The first entry in the left-hand navigation (high level)</dt>
+<dd>
+<p>Organize around the overarching goals the user is trying to achieve. For example, getting started or protecting data.</p>
+</dd>
+<dt class="hdlist1">The second entries in the navigation (medium level)</dt>
+<dd>
+<p>Organize around the broad tasks that compose the overarching goals. For example, setting up disaster recovery or setting up data protection.</p>
+</dd>
+<dt class="hdlist1">Individual pages (detailed level)</dt>
+<dd>
+<p>Organize around the individual tasks that compose the broad tasks, with each one focusing on a single learning or doing aspect of that broad task. For example, the tasks required to set up disaster recovery.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="bonus-tip">Bonus tip</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>The content is written in AsciiDoc, a lightweight markup language.</p>
+<p>Read your writing out loud. As Elmore Leonard said, “If it sounds like writing, I rewrite it.”</p>
 </div>
-<div class="paragraph">
-<p><a href="asciidoc_syntax.html" target="_blank" rel="noopener">AsciiDoc cheat sheet</a></p>
 </div>
-<div class="paragraph">
-<p><span class="image"><img src="./media/diagram_pencil_icon.png" alt="Pencil icon"></span></p>
-</div>
-</li>
-<li>
-<p>To commit changes, scroll down the page, select <strong>Create a new branch for this commit and start a pull request</strong>, then click <strong>Propose file change</strong>.</p>
-<div class="paragraph">
-<p>GitHub automatically fills in a branch name (for example, <em>username-patch-n</em>) for the change.</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="./media/diagram_propose_file_change.png" alt="Propose file change"></span></p>
-</div>
-</li>
-<li>
-<p>Provide a comment about the edit that you made, then click <strong>Create pull request</strong>.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./media/diagram_create_pull_requst.png" alt="Create pull request"></span></p>
-</div>
-<div class="paragraph">
-<p>After you propose the changes, we&#8217;ll review them and merge the changes into the GitHub repository.</p>
-</div>
-<div class="paragraph">
-<p>You can also view the status of the pull request by clicking <strong>Pull requests</strong> on the top banner next to the GitHub search box:</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="./media/diagram_pull_request_tab.png" alt="Pull request tab"></span></p>
-</div>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>To request changes to a page:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Click <strong>Request doc changes</strong> next to the page title.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./media/diagram_request_doc_changes.png" alt="Request doc changes"></span></p>
-</div>
-<div class="paragraph">
-<p>A text box appears, enabling you to provide request details.</p>
-</div>
-</li>
-<li>
-<p>Provide details in the text box, and then click <strong>Submit new issue</strong> to create an issue for your request.</p>
-<div class="paragraph">
-<p>The text box is prepopulated with the title and URL for the page. Don&#8217;t delete this information.</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="./media/diagram_submit_new_issue.png" alt="Submit new issue"></span></p>
-</div>
-<div class="paragraph">
-<p>Opening an issue enables collaboration through GitHub comments. You receive email notifications based on the preferences you indicated in your GitHub account settings.</p>
-</div>
-<div class="paragraph">
-<p>You can also view the status of the request by clicking <strong>Issues</strong> on the top banner next to the GitHub search box:</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="./media/diagram_issues_tab.png" alt="Issues tab"></span></p>
-</div>
-</li>
-</ol>
-</div>
-</li>
-</ol>
 </div>
 
         </article>
