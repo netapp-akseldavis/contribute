@@ -330,7 +330,8 @@
 
 <p class="page-details">
 
-<time datetime="2019-09-20 20:41:48 +0000">09/20/2019</time>
+
+<time datetime="2019-11-06 21:14:31 +0000">11/06/2019</time>
 
 
 <span>Contributors
@@ -572,7 +573,7 @@ The + is a list continuation. It keeps the text inline with the list item. Omitt
 <div class="sect2">
 <h3 id="links">Links</h3>
 <div class="paragraph">
-<p>The syntax that you use depends on what you&#8217;re looking to:</p>
+<p>The syntax that you should use depends on what you&#8217;re linking to:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -656,6 +657,97 @@ The + is a list continuation. It keeps the text inline with the list item. Omitt
 <pre>link:style.html#use-simple-words[Use simple words]</pre>
 </div>
 </div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="notes-tips-etc">Notes, tips, etc.</h3>
+<div class="paragraph">
+<p>You might want to draw attention to certain statements by creating notes or tips. Format them as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>NOTE: text</p>
+</li>
+<li>
+<p>TIP: text</p>
+</li>
+<li>
+<p>IMPORTANT: text</p>
+</li>
+<li>
+<p>CAUTION: text</p>
+</li>
+<li>
+<p>WARNING: text</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Use each of these sparingly. You don&#8217;t want to create pages that are full of notes and tips. They become less meaningful if you do.</p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s what each of these looks like when the AsciiDoc content is turned into HTML:</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This is a note. It includes extra info that a reader might need to know.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Here&#8217;s a tip. A tip provides useful information that can help a user do something or understand something.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+This is important information that the reader must be aware of so they don&#8217;t do something that they shouldn&#8217;t.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+A caution advises the reader to act carefully. Use this in rare circumstances.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+And this is a warning that informs of danger or harm. This one should be used very rarely, as well.
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
@@ -747,7 +839,22 @@ This is my lead paragraph for this content.</pre>
 <p>Use the following headings as needed:</p>
 </div>
 <div class="paragraph">
+<div class="title">What you&#8217;ll need</div>
+<p><em>The information the user needs to complete the task.</em></p>
+</div>
+<div class="paragraph">
+<div class="title">About this task</div>
+<p><em>Some extra contextual info the user might need to know about this task.</em></p>
+</div>
+<div class="paragraph">
+<div class="title">Steps</div>
+<p><em>The individual steps to complete the task.</em></p>
+</div>
+<div class="paragraph">
 <div class="title">What&#8217;s next?</div>
+<p><em>What the user should do next.</em></p>
+</div>
+<div class="paragraph">
 <p>Each of these should include a . right before the text, like so:</p>
 </div>
 <div class="literalblock">
