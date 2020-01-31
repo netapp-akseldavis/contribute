@@ -867,7 +867,7 @@
 
 <p class="page-details">
 
-<time datetime="2020-01-27 17:27:47 +0000">01/27/2020</time>
+<time datetime="2020-01-31 18:35:28 +0000">01/31/2020</time>
 
 
 <span>Contributors
@@ -1542,6 +1542,69 @@ curl -s https:///v1/ \
 -H secret-key: \
 -X [GET,POST,PUT,DELETE]</pre>
 </div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="content-reuse">Content reuse</h3>
+<div class="paragraph">
+<p>If you have a chunk of content that&#8217;s repeated across different pages, you can easily write it once and reuse it across those pages. Reuse is possible from within the same repository and across repositories. Here&#8217;s how it works.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create a folder in your repository named _include</p>
+<div class="paragraph">
+<p><a href="https://github.com/NetAppDocs/cloud-tiering" target="_blank" rel="noopener">For example, take a look at the Cloud Tiering repository</a>.</p>
+</div>
+</li>
+<li>
+<p>Add a .adoc file in that folder that includes the content that you&#8217;d like to reuse.</p>
+<div class="paragraph">
+<p>It can be a sentence, a list, a table, one or more sections, and so on. Don&#8217;t include anything else in the file&#8212;&#8203;no headers or anything.</p>
+</div>
+</li>
+<li>
+<p>Now go to the files where you&#8217;d like to reuse that content.</p>
+</li>
+<li>
+<p>If you&#8217;re reusing the content from within the <em>same</em> GitHub repository, use the following syntax on a line by itself:</p>
+<div class="literalblock">
+<div class="content">
+<pre>include::/_include/&lt;filename&gt;.adoc[]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>include::/_include/s3regions.adoc[]</pre>
+</div>
+</div>
+</li>
+<li>
+<p>If you&#8217;re reusing the content in a <em>different</em> repository, use the following syntax on a line by itself:</p>
+<div class="literalblock">
+<div class="content">
+<pre>include::https://raw.githubusercontent.com/NetAppDocs/&lt;reponame&gt;/master/_include/&lt;filename&gt;.adoc[]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>include::https://raw.githubusercontent.com/NetAppDocs/cloud-tiering/master/_include/s3regions.adoc[]</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>That&#8217;s it!</p>
+</div>
+<div class="paragraph">
+<p>If you want to learn more about the include directive, <a href="https://asciidoctor.org/docs/user-manual/#include-directive" target="_blank" rel="noopener">check out the AsciiDoctor User Manual</a>.</p>
 </div>
 </div>
 <div class="sect2">
